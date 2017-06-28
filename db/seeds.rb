@@ -1,4 +1,5 @@
 10.times do |blog|
+
 Blog.create!(
     title: "My Blog Post #{blog}",
     body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
@@ -37,3 +38,4 @@ puts "9 portfolio items created"
 end
 
 puts "5 skill items created"
+
