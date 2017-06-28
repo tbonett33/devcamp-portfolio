@@ -1,8 +1,7 @@
 10.times do |blog|
-<<<<<<< HEAD
-=======
 
->>>>>>> 00ee371b7d271ea43a972021f551b797c97f773c
+
+
 Blog.create!(
     title: "My Blog Post #{blog}",
     body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
@@ -15,12 +14,12 @@ Blog.create!(
 )
 
 end
-<<<<<<< HEAD
-=======
+
+
 
 puts "10 blog posts created"
 
->>>>>>> 00ee371b7d271ea43a972021f551b797c97f773c
+
 9.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
@@ -33,22 +32,20 @@ puts "10 blog posts created"
     thumb_image:"http://placehold.it/400x150"
     )
 end
-<<<<<<< HEAD
-=======
+
 
 puts "9 portfolio items created"
 
->>>>>>> 00ee371b7d271ea43a972021f551b797c97f773c
+
 5.times do |skill|
   Skill.create!(
     title: "Rails #{skill}",
     percent_utilized: 15
   )
-<<<<<<< HEAD
-end
-=======
+
+
 end
 
 puts "5 skill items created"
 
->>>>>>> 00ee371b7d271ea43a972021f551b797c97f773c
+
