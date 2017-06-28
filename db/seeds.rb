@@ -1,10 +1,10 @@
-#10.times do |blog|
-#  Blog.create!(
-#      title: "My Blog Post #{blog}",
-#      body: "This is a bunch of random text"
-#    
-#    )
-#end
+10.times do |blog|
+  Blog.create!(
+      title: "My Blog Post #{blog}",
+      body: "This is a bunch of random text"
+  
+   )
+end
 #
 #5.times do |skill|
 #  Skill.create!(
