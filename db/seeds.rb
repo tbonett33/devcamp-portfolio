@@ -28,8 +28,8 @@ puts "10 blog posts created"
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    main_image: "http://placehold.it/350x150" , 
-    thumb_image:"http://placehold.it/400x150"
+    main_image: "http://themodernape.com/wp-content/uploads/2014/09/internet-troll.jpg" , 
+    thumb_image:"http://themodernape.com/wp-content/uploads/2014/09/internet-troll.jpg"
     )
 end
 
