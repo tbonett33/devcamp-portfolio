@@ -25,3 +25,11 @@ puts "5 skills created"
 end
 puts "9 portfolio items created"
 
+5.times do |skill|
+  Skill.create!(
+    title: "Rails #{skill}",
+    percent_utilized: 15
+  )
+end
+
+puts "5 skill items created"
