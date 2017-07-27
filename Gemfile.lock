@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/tbonett33/Tbone_view_tool
+  revision: de3571b1b850d3714b28d721e5b4647178f2b7f6
+  specs:
+    Tbone_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -183,6 +189,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  Tbone_view_tool!
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
