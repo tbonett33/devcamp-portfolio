@@ -58,4 +58,4 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 
 gem 'devise', '~> 4.3'
 gem 'Tbone_view_tool', git: 'https://github.com/tbonett33/Tbone_view_tool'
-
+gem 'petergate', '~>1.7'
