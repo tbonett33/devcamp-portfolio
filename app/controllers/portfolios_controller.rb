@@ -1,4 +1,8 @@
 class PortfoliosController < ApplicationController
+
+  layout 'portfolio'
+  
+
   def index
     @portfolio_items = Portfolio.all
   end
@@ -14,6 +18,7 @@ class PortfoliosController < ApplicationController
 
   def create
     @portfolio_item = Portfolio.new(portfolio_params)
+
     respond_to do |format|
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
@@ -24,7 +29,12 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
+
+    @portfolio_item = Portfolio.find(params[:id]) 
+    3.times { @portfolio_item.technologies.build }
+
     @portfolio_item = Portfolio.find(params[:id])
+r
   end
 
   def update
@@ -55,10 +65,24 @@ class PortfoliosController < ApplicationController
       format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
+
+
+  private
+
+  def portfolio_params
+    params.require(:portfolio).permit(:title,
+                                      :subtitle,
+                                      :body,
+                                      technologies_attributes: [:name]
+                                     )
+  end
+
+
   
   private
   
   def portfolio_params
     params.require(:portfolio).permit(:title, :subtitle,:body, :image, technologies_attributes: [:name])
   end
+
 end
