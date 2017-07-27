@@ -1,6 +1,8 @@
 class PortfoliosController < ApplicationController
+
   layout 'portfolio'
   
+
   def index
     @portfolio_items = Portfolio.all
   end
@@ -27,8 +29,12 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
+
     @portfolio_item = Portfolio.find(params[:id]) 
     3.times { @portfolio_item.technologies.build }
+
+    @portfolio_item = Portfolio.find(params[:id])
+r
   end
 
   def update
@@ -60,6 +66,7 @@ class PortfoliosController < ApplicationController
     end
   end
 
+
   private
 
   def portfolio_params
@@ -68,6 +75,14 @@ class PortfoliosController < ApplicationController
                                       :body,
                                       technologies_attributes: [:name]
                                      )
+  end
+
+
+  
+  private
+  
+  def portfolio_params
+    params.require(:portfolio).permit(:title, :subtitle,:body, :image, technologies_attributes: [:name])
   end
 
 end
