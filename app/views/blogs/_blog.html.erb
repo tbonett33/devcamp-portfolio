@@ -1,7 +1,7 @@
 <div class="blog-post">
   <h2 class="blog-post-title"><%= link_to blog.title.upcase, blog %></h2>
   <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
-
+  <div>
     <p> This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
   </div>
   <% if logged_in?(:site_admin) %>
