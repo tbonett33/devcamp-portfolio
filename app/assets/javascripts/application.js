@@ -1,3 +1,4 @@
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -15,5 +16,7 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require html.sortable
+//= require cocoon
+//= require gritter
 //= require turbolinks
 //= require_tree .
