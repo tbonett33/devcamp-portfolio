@@ -1,4 +1,3 @@
-
 class User < ApplicationRecord
   ############################################################################################
   ## PeterGate Roles                                                                        ##
@@ -9,8 +8,6 @@ class User < ApplicationRecord
   ############################################################################################ 
  
 
- 
-
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -18,7 +15,7 @@ class User < ApplicationRecord
 
   validates_presence_of :name
 
-
+  has_many :comments, dependent: :destroy
 
   def first_name
     self.name.split.first
